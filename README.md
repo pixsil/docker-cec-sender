@@ -24,9 +24,14 @@ docker start $(docker ps -f name="cec-api-2022" -q)
 Endpoint:
 http://docker-ip:5010/index.php
 
-Payload:
+Payload for a CEC on command
 ```json
-{"command":"on 0"}
+{"command":"on 1"}
+```
+
+Or payload for a CEC custom command:
+```json
+{"command":"tx 3F:82:10:00"}
 ```
 
 ## Debugging
